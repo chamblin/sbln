@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+if ARGV.length == 2
+  first = File.open(ARGV.shift).read.split("\n")
+end
+
+last = File.open(ARGV.shift).read.split("\n")
+
+puts (first - last).join("\n")
