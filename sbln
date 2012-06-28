@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 
 if ARGV.length == 2
-  first = File.open(ARGV.shift).read.split("\n")
+  first = File.read(ARGV.shift).split("\n")
 else
   first = STDIN.read.split("\n")
 end
 
-last = File.open(ARGV.shift).read.split("\n")
+last = File.read(ARGV.shift).split("\n")
 
 puts (first - last).join("\n")
