@@ -2,6 +2,8 @@
 
 if ARGV.length == 2
   first = File.open(ARGV.shift).read.split("\n")
+else
+  first = STDIN.read.split("\n")
 end
 
 last = File.open(ARGV.shift).read.split("\n")
